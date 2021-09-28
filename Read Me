@@ -18,4 +18,19 @@ Completed the Mario Game to understand the basic terminology such as:
             => Autowiring :Process of wiring in dependencies for a Spring Bean.
             
     3: Does the spring framework really add the value?
+       In the GameRunner hellow world App, we have very few classes
+       But in real world application are much more complex.
+           -> Multiple Layers(Web, Business.Data etc)
+           -> Each layer id dependent on the layer below it.
+               -Example: Business Laye class talks to a data layer class.
+                    .Data Layer class is dependent of business layer class.
+                -There are thousands od such dependencies in every applicantion.
+       With Spring Framework:
+            -> Instead of focusing on objects, their dependencies and wiring
+                  -you can focus on the business logic of your application.
+            -> Spring Framework manages the lifecycle objects:
+                  -Mark componets using annotations: @cCOmponent(and others.)
+                  -Mark dependencies using@Autowored 
+                  -Allow Spring Framework to do its magic.
+             -> Ex:Controller->BusinessService(sum)>DataService(data)
     
