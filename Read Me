@@ -1,0 +1,21 @@
+Part of this project I learned spring boot basics from youtube "Spring Framework Tutorial For Beginners - 2021".
+Completed the Mario Game to understand the basic terminology such as:
+    => Tight Coupling vs loose coupling.
+    1: What is happing in background ?
+       Let's Debug: Identified candidate component class : file[GameRunner.class]
+                    Identified candidate component class : file[MarioGame.class
+                    Creating shared instance of singleton bean 'gameRunner'
+                    Creating shared instance of singleton bean 'marioGame'
+                    Autowiring by type from bean name 'gameRunner' via constructor to bean named 'marioGame'
+    2: Spring Framework Importent terminology.
+        @Component(..) :  Class managed by spring framework.
+        Dependency:  GameRunner needs GamingConsole implementation. GamingConsole implementation example: MarioGame is a dependency of GameRunner.
+        Component Scan :  How does spring framework find the component classes? It scan the packages!(@ComponentScan ("org.springframework")) 
+        Dependency Injection :  Identify Beans, their dependencies and wire them together (Provides inversion of control(IoC))
+            => Spring Beans :  An object managed by spring framework.
+            => IoC Container : Manages the life cycle of beans and dependencies.
+                Types: ApplicationContext(Complex), BeanFactory (Simpler Feature- rarly used)
+            => Autowiring :Process of wiring in dependencies for a Spring Bean.
+            
+    3: Does the spring framework really add the value?
+    
