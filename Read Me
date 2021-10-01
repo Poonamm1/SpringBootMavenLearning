@@ -16,6 +16,11 @@ Completed the Mario Game to understand the basic terminology such as:
             => IoC Container : Manages the life cycle of beans and dependencies.
                 Types: ApplicationContext(Complex), BeanFactory (Simpler Feature- rarly used)
             => Autowiring :Process of wiring in dependencies for a Spring Bean.
+              Type of Dependency Injection 
+              Constructor Based: Dependency are set by creating the Bean using the constructor.
+                   Spring team recommends coonstructor based injection as dependencies are automatically set when object is created.
+              Setter Based: by calling setter method.
+              Field: no constructor or setter , Injected using reflection.
             
     3: Does the spring framework really add the value?
        In the GameRunner hellow world App, we have very few classes
@@ -33,4 +38,13 @@ Completed the Mario Game to understand the basic terminology such as:
                   -Mark dependencies using@Autowored 
                   -Allow Spring Framework to do its magic.
              -> Ex:Controller->BusinessService(sum)>DataService(data)
+    
+    Spring Framework Module:
+    
+    => Core : IoC Container etc.
+    =>Testing :Mock Objects, Spring MVC Test etc.
+    => Data Acess : Transactions, JDBC, JPA etc.
+    => Web Servlet : Spring MVC etc.
+    =>Web Reactive : Spring WebFlux etc.
+    =>Integration : JMC etc.
     
