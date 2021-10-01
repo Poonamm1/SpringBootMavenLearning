@@ -48,3 +48,16 @@ Completed the Mario Game to understand the basic terminology such as:
     =>Web Reactive : Spring WebFlux etc.
     =>Integration : JMC etc.
     
+    
+    Each application can choose the modules they want to make use of.
+    
+    Spring Projects:  Spring keeps evolving (REST API) > Microservices > Cloud.
+        => Spring Boot: Most popular framework to build microsservices.
+        => Spring Cloud : Build Cloud native app.
+        =>Spring Data: Integrated the same way with different types of database : NoSQL and  relational .
+        => Spring Integration: Address challenges with integration at other applications.
+        => Spring Security : Secure your web application, REST API or microservices.
+        
+     
+    
+    
